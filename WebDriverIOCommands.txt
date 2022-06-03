@@ -1,0 +1,23 @@
+ webdriver setup + Appium + Andriod Studio for Mobile Testing and installation commands:
+-- npm init
+-- 1. npm init -y
+-- npm install webdriverio --save-dev
+-- 2. npm install @wdio/cli
+-- ./node_modules/.bin/wdio config
+-- npm install chai --save-dev
+-- npm install chai-webdriverio --save-dev
+-- npm install local-runner --save-dev
+-- npx wdio config
+-- npm i allure-commandline
+-- npx wdio config --yes
+-- npx wdio run
+-- npm install --save-dev @wdio/cli
+-- npx appium-doctor --android
+-- npm install appium-doctor -g
+-- npm i appium-xcuitest-driver
+-- npm i appium-uiautomator2-driver
+-- appium driver install uiautomator2
+-- appium driver list
+-- npx wdio run wdio.conf.js
+
+-- flutter config --android-sdk C:\Users\AppData\Local\Android\Sdk\

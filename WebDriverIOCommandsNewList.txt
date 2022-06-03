@@ -1,0 +1,118 @@
+Webdriver IO Installation:
+
+1. Java
+2. Node.js installation
+3. NPM installation
+4. open terminal/command line:
+   node -v
+   npm -v
+
+4. install VSC editor
+
+5. webdriver setup and installation commands:
+-- npm init
+-- npm install webdriverio --save-dev
+-- npm install @wdio/cli
+-- ./node_modules/.bin/wdio config
+-- npm install chai-webdriverio --save-dev
+-- npm install local-runner --save-dev
+-- npm install chai --save-dev (Chai should be    installed in last)
+
+6. WebdriverIO + Appium + Android Setup    commands :
+-- npm init -y
+-- npm install @wdio/cli
+-- npx appium-doctor --android
+-- npm install appium-doctor -g
+-- npm i appium-xcuitest-driver
+-- npm i appium-uiautomator2-driver
+-- appium driver install uiautomator2
+-- appium driver list
+-- npx wdio run wdio.conf.js
+-- npm i allure-commandline
+-- npx wdio config --yes
+-- npx wdio run
+-- appium -p 4724 --allow-cors
+
+-- npm test -- --spec ./test/specs/britishredcross.js
+
+Allure Report Generate:
+-- npm i @wdio/allure-reporter
+-- allure generate allure-results
+-- allure generate allure-results --clean
+-- allure open
+
+WDIO setup for Test :
+
+    beforeTest: function () {
+     const chai = require('chai')
+     constWebdriver = require('chai-webdriverio').default
+     chai.use(chaiWebdriverIO(browser))
+
+     global.assert = chai.assert
+     global.should = chai.should
+     global.expect = chai.expect
+
+
+    },
+npx wdio run test/wdio.config.ts
+
+  // "ts-node": "^10.7.0",
+
+
+Jest Framework :
+
+-- npm init
+-- npm install --save-dev jest
+-- npm install node-notifier
+-- jest my-test --notify --config=config.json
+-- npm install jest --global
+-- npm install --save-dev babel-jest @babel/core @babel/preset-env
+-- jest --init
+-- npm install --save-dev @babel/preset-typescript
+-- npm install --save-dev ts-jest
+-- npm install --save-dev @types/jest
+
+Add the Configuration in package.json file : 
+  "jest": {
+    "collectCoverage":true,
+"coverageReporters":["lcov"],
+"coverageDirectory":"./output"
+  }
+You Tube Link : https://www.youtube.com/watch?v=wWx9uZa-Wnk&list=PLrZyA4KBTQriFZkYhvhy1KFM21-l7VyL-&index=5
+--------------------------------------------------------------------------------
+
+General Advice :
+ 
+If a test is failing, one of the first things to check should be whether the test is failing when it's the only test that runs. To run only one test with Jest, temporarily change that test command to a test.only:
+
+-----------------------------------------------------------------------
+Puppeteer Installation :
+
+-- npm init
+-- npm install puppeteer mocha chai
+-- npm install prettier
+-- touch.prettierrc  
+
+      {
+      "semi": false,
+      "singleQuote": true,
+      "useTabs": true,
+      "tabWidth": 2,
+      "bracketSpacing": true,
+      "arrowParens": "avoid",
+      "trailingComma": "es5"
+    }
+
+
+
+-----------------------------------------------------------------------
+Jest-Puppeteer Installation :
+
+-- npm init
+-- npm install jest puppeteer jest-puppeteer
+-- npm install @babel/core @babel/preset-env babel-jest
+-- ./node_modules/.bin/jest --init
+-- jest --init
+
+
+
